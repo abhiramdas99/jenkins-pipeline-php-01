@@ -7,4 +7,7 @@ Depoyment of simple php application through jenkins pipeline
 1) jenkinks server
 2) xampp webserver
 
-    
+# Steps 
+1) As developer create  a simple php file and push git master branch
+2) As deveop engineer create jenkins file anfd push to git maste branch
+3) 
