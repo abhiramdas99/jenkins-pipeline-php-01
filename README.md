@@ -14,7 +14,7 @@ Depoyment of simple php application through jenkins pipeline without adding any 
    - Then copy the content of public key file  i.e id_rsa.pub
    - Then goto to your node server i.e xampp-webserver. and execute the following command :
      sudo su
-     vim  vim /root/.ssh/authorized_keys . Then paste the above copied key and save it
+     vim /root/.ssh/authorized_keys . Then paste the above copied key and save it
      This step is very important step. 
      
       
@@ -25,4 +25,12 @@ Depoyment of simple php application through jenkins pipeline without adding any 
    Follow - https://github.com/abhiramdas99/jenkins-pipeline-php-01/blob/main/Jenkinsfile
    
 4) As a deveop, create a pipeline job
-      
+   - dashboard > new item > php_app_pipeline
+   - select project type : pipeline
+   - dont change any default thing ,
+   - pipeline defination : pipeline script from scm
+   - scm : git
+   - repo url : https://github.com/abhiramdas99/jenkins-pipeline-php-01
+   - branch specifier : main
+   - script path : Jenkinsfile
+   - 
