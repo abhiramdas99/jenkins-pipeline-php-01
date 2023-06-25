@@ -24,9 +24,17 @@ Depoyment of simple php application through jenkins pipeline without adding any 
 3) As deveop engineer create jenkins file anfd push to git maste branch
    Follow - https://github.com/abhiramdas99/jenkins-pipeline-php-01/blob/main/Jenkinsfile
    
-4) As a deveop, create a pipeline job
+4) Webhook setup in git
+   - https://github.com/abhiramdas99/jenkins-pipeline-php-01/settings/hooks
+   - create new
+   - payload url : http://35.154.142.22:8080/github-webhook/
+   - content type : default
+   - Which events would you like to trigger this webhook? :  Send everything
+     
+5) As a deveop, create a pipeline job
    - dashboard > new item > php_app_pipeline
    - select project type : pipeline
+   - build triger : GitHub hook trigger for GITScm polling ( but before that you configure the webhook part in github)
    - dont change any default thing ,
    - pipeline defination : pipeline script from scm
    - scm : git
