@@ -7,6 +7,7 @@ pipeline{
     stages{
         stage('Deploy to remote'){
             steps{
+                sh 'echo "welcome">file1.txt'
                 sh 'scp file1.txt root@${staging_server}:/tmp/'        
             }
         }
