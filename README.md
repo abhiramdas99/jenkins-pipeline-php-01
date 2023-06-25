@@ -8,7 +8,7 @@ Depoyment of simple php application through jenkins pipeline without adding any 
 2) xampp webserver. follow - https://github.com/abhiramdas99/frequent-use-shell-scripts/blob/main/ubuntu_lamp_installation.sh
 
 # Steps 
-1) Actually bydefault through jenkin user, jenkins try to run any shellscript in remote machine. For that you need to set the ssh connectivity
+1) Actually bydefault through jenkin user, jenkins try to run any shellscript in remote machine. For that you need to set the ssh connectivity in jenkins user profile.
    - 1st  you login from jenkins user , the command is -  sudo su jenkins
    - 2nd  generate ssh key - ssh-keygen. Then the public and private key will be geneate in below location - /var/lib/jenkins/.ssh
    - Then copy the content of public key file  i.e id_rsa.pub
